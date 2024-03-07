@@ -1,0 +1,11 @@
+model:
+  _target_: pcompanion.model.PCompanion
+  prod2vec:
+    _target_: pcompanion.prod2vec.Prod2Vec
+  complementary_item:
+    _target_: pcompanion.common_nn.ComplementaryItem
+  complementary_type:
+    _target_: pcompanion.common_nn.ComplementaryTypeEncoder
+
+data:
+  edge_index: data/edge_index.pt
